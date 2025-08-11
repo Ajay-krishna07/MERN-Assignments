@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+
+        .form-container {
+            max-width: 800px;
+            margin: 100px auto;
+            text-align: center;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .form-row {
+            display: flex;
+            gap: 15px;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 15px;
+            border: none;
+            background-color: #f7f7f7;
+            border-radius: 8px;
+            font-size: 16px;
+            resize: none;
+        }
+
+        button {
+            background-color: #008066;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 30px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 10px;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background-color: #00664d;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Want To Get In Touch?</h2>
+        <form>
+            <div class="form-row">
+                <input type="text" placeholder="Name" required>
+                <input type="email" placeholder="Email" required>
+            </div>
+            <input type="text" placeholder="Phone Number" required>
+            <textarea placeholder="Message" rows="5" required></textarea>
+            <button type="submit">Submit Now</button>
+        </form>
+    </div>
+</body>
+</html>
